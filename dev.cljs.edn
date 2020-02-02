@@ -1,1 +1,1 @@
-{:main ui-template.main}
+{:main tictactoe.main}

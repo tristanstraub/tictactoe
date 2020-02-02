@@ -1,4 +1,4 @@
-(ns ui-template.style
+(ns tictactoe.style
   (:require [garden-mower.core]
             [garden.core]
             [clojure.string :as str]

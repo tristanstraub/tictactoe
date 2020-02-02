@@ -1,4 +1,4 @@
-(ns ui-template.state)
+(ns tictactoe.state)
 
 (defn empty-board
   []

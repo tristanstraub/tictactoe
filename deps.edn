@@ -4,11 +4,10 @@
            com.tristanstraub/garden-mower  {:git/url "https://github.com/tristanstraub/garden-mower"
                                             :sha     "c8af31358ae1da496c18d3c9d2a35d049611d5f8"}
 
-           hiccup                          {:mvn/version "1.0.5"}
-
-           com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
-           com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+           hiccup                          {:mvn/version "1.0.5"}}
 
  :paths   ["src" "target" "resources"]
 
- :aliases {:build-dev {:main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
+ :aliases {:build-dev {:main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}
+           :dev {:extra-deps {com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
+                              com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}}}}

@@ -1,10 +1,10 @@
-(ns ui-template.main
-  (:require-macros [ui-template.style :as style])
+(ns tictactoe.main
+  (:require-macros [tictactoe.style :as style])
   (:require [rum.core :as rum]
             [goog.dom :as dom]
             [cljs.pprint :refer [cl-format]]
-            [ui-template.state :as state]
-            [ui-template.ai :as ai]))
+            [tictactoe.state :as state]
+            [tictactoe.ai :as ai]))
 
 (defonce state
   (atom (state/new-state)))

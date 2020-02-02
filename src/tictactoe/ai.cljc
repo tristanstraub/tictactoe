@@ -1,5 +1,5 @@
-(ns ui-template.ai
-  (:require [ui-template.state :as state]))
+(ns tictactoe.ai
+  (:require [tictactoe.state :as state]))
 
 (defn count-winning-ends
   [state remaining-depth]
