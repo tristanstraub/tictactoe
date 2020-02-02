@@ -1,0 +1,14 @@
+{:deps    {org.clojure/clojure             {:mvn/version "1.10.1"}
+           rum                             {:mvn/version "0.11.3"}
+
+           com.tristanstraub/garden-mower  {:git/url "https://github.com/tristanstraub/garden-mower"
+                                            :sha     "c8af31358ae1da496c18d3c9d2a35d049611d5f8"}
+
+           hiccup                          {:mvn/version "1.0.5"}
+
+           com.bhauman/figwheel-main       {:mvn/version "0.2.0"}
+           com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+
+ :paths   ["src" "target" "resources"]
+
+ :aliases {:build-dev {:main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
